@@ -1,0 +1,294 @@
+html,body{
+
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: dark;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    margin:0;
+}
+
+ @media only screen and (min-width: 992px){
+
+    body,html{
+        overflow-x:hidden; 
+    }
+} 
+
+/* Title section */
+
+#title{
+
+    margin-bottom: 100px;
+}
+
+.main-heading{
+
+    margin-top:2.3em;
+    margin-bottom: 1em;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+/* Navbar  */
+
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: black;
+  width:100%;
+  font-family: 'Merriweather', serif;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+
+    color:white;
+
+}
+
+/* Container in the title section */
+
+.container-fluid{
+    margin: 0 10%;
+}
+
+.main-img{
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    transition: all 400ms ease-in-out;
+}
+
+.main-img:hover{
+
+    transform: scale(1.1); 
+
+}
+
+.title-section-p{
+
+    line-height: 2;
+    margin-bottom: 2.6em;
+
+}
+
+.title-section-btn{
+
+    color:white;
+    font-family: 'Merriweather', serif;
+}
+
+/* Features section */
+
+#features{
+
+    text-align: center;
+    background-color: white;
+    padding-top: 5em;
+    padding-bottom: 4em;
+    margin-bottom: 10em;
+    color:black;
+}
+
+.features-col{
+    line-height: 3;
+}
+
+.features-text{
+
+    margin-bottom: 2em;
+}
+
+.features-image{
+
+    font-size: 4em;
+    margin-bottom: .5em;
+
+}
+
+.features-heading{
+
+    font-family: 'Merriweather', serif;
+}
+
+/* Hover effects on feature icons */
+
+.bt:hover{
+    color: #094CB5;
+    transition: ease-in-out 500ms;
+}
+
+.check:hover{
+    color: lightgreen;
+    transition: ease-in-out 500ms;
+}
+
+.ear:hover{
+    color:gray;
+    transition: ease-in-out 1000ms;
+}
+
+/* Carousel section */
+
+#features-carousel{
+
+    margin-bottom: 10em;
+}
+
+.carousel-item{
+
+    text-align: center;
+}
+
+.carousel-item img{
+
+    border-radius: 100%;
+    float:left;
+}
+
+.carousel-heading{
+
+    margin-top: 100px;
+    font-family: 'Merriweather', serif;
+
+}
+
+/* Retailers section */
+
+#retailers{
+
+    background-color: white;
+    margin-bottom: 10em;
+}
+
+.retailers-img{
+
+    border-radius: 100%;
+    margin: 40px;
+}
+
+.retailers-img{
+
+    transition: all 400ms ease-in-out;
+
+}
+
+.retailers-img:hover{
+
+    transform: scale(1.2); 
+}
+
+/* Pricing section */
+
+#pricing{
+
+    text-align: center;
+    margin-bottom: 10em;
+}
+
+.pricing-heading{
+    font-family: 'Merriweather', serif;
+}
+
+/* Aligns cards to the center of the page */
+
+.card-deck{
+
+    width: 100%;
+    margin-left: 25%;
+}
+
+.card{
+    transition: all 400ms ease-in-out;
+}
+
+.card:hover{
+
+    transform: scale(1.1); 
+}
+
+.card-body{
+
+    line-height: 2;
+}
+
+.card-title{
+
+    font-family: 'Merriweather', serif;
+}
+
+.price-card{
+
+    color:black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.price-btn{
+
+    color:white;
+    font-family: 'Merriweather', serif;
+}
+
+@media only screen and (max-width: 990px){
+
+   .card-deck{
+
+        margin-left: 5%;
+        margin-right: 5%;
+   }
+} 
+
+/* CTA section */
+
+#cta{
+
+    background-color: white;
+    text-align: center;
+    color:black;
+}
+
+.cta-heading{
+
+    font-family: 'Merriweather', serif;
+}
+
+/* Footer section */
+
+#footer{
+
+    text-align: center;
+}
+
+.social-icon{
+
+    margin: 20px;
+    cursor:pointer;
+
+}
+
+/* Button to scroll to the top */
+
+.to-top-btn{
+
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    background: black;
+    color:white;
+    bottom: 40px;
+    right: 50px;
+    font-size: 3em;
+
+    text-decoration: none;
+    text-align:center;
+    line-height: 50px;
+}
