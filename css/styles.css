@@ -1,331 +1,275 @@
-html,body{
-
-    width:100%;
-    height:100%;
-    margin: auto;
-    padding:0;
-    scroll-behavior: smooth;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-
-body{
-    background-color: dark;
-    color:white;
-    font-family: 'Roboto Mono', monospace;
-    overflow-x: hidden;
+body {
+  background-color: dark;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
 }
 
- @media only screen and (min-width: 992px){
+/* Media queries for better responsiveness */
 
-    .main-img{
+@media only screen and (min-width: 992px) {
+  .main-img {
+    margin-top: 31%;
+  }
+}
 
-        margin-top: 31%;
+@media only screen and (max-width: 990px) {
+    html,
+    body {
+      width: 100%;
     }
+  
+    #features {
+      width: 100%;
+    }
+  
+    #pricing {
+      width: 70%;
+    }
+  
+    .container-fluid {
+      width: 90%;
+    }
+  
+    .title-section-btn {
+      margin-bottom: 4em;
+    }
+  }
 
-    
-} 
-
+  
 /* Title section */
 
-#title{
-
-    margin-bottom: 100px;
+#title {
+  margin-bottom: 100px;
 }
 
-.main-heading{
-
-    margin-top:2.3em;
-    margin-bottom: 1em;
-    font-family: 'Merriweather', serif;
-    text-align: center;
+.main-heading {
+  margin-top: 2.3em;
+  margin-bottom: 1em;
+  font-family: "Merriweather", serif;
+  text-align: center;
 }
 
 /* Navbar  */
 
-.navbar{
+.navbar {
   overflow: hidden;
   position: fixed;
   top: 0;
   z-index: 2;
   background-color: black;
-  width:100%;
-  font-family: 'Merriweather', serif;
+  width: 100%;
+  font-family: "Merriweather", serif;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-
-    color:white;
-
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
 
 /* Container in the title section */
 
-.container-fluid{
-    margin: 0 10%;
+.container-fluid {
+  margin: 0 10%;
 }
 
-.main-img{
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px black;
-    transition: all 400ms ease-in-out;
+.main-img {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+  transition: all 400ms ease-in-out;
 }
 
-.main-img:hover{
-
-    transform: scale(1.1); 
-
+.main-img:hover {
+  transform: scale(1.1);
 }
 
-.title-section-p{
-
-    line-height: 2;
-    margin-bottom: 2.6em;
-
+.title-section-p {
+  line-height: 2;
+  margin-bottom: 2.6em;
 }
 
-.title-section-btn{
-
-    color:white;
-    font-family: 'Merriweather', serif;
+.title-section-btn {
+  color: white;
+  font-family: "Merriweather", serif;
 }
 
 /* Features section */
 
-#features{
-
-    text-align: center;
-    background-color: white;
-    padding-top: 5em;
-    padding-bottom: 4em;
-    margin-bottom: 10em;
-    color:black;
+#features {
+  text-align: center;
+  background-color: white;
+  padding-top: 5em;
+  padding-bottom: 4em;
+  margin-bottom: 10em;
+  color: black;
 }
 
-.features-col{
-    line-height: 3;
+.features-col {
+  line-height: 3;
 }
 
-.features-text{
-
-    margin-bottom: 2em;
+.features-text {
+  margin-bottom: 2em;
 }
 
-.features-image{
-
-    font-size: 4em;
-    margin-bottom: .5em;
-
+.features-image {
+  font-size: 4em;
+  margin-bottom: 0.5em;
 }
 
-.features-heading{
-
-    font-family: 'Merriweather', serif;
+.features-heading {
+  font-family: "Merriweather", serif;
 }
 
 /* Hover effects on feature icons */
 
-.bt:hover{
-    color: #094CB5;
-    transition: ease-in-out 500ms;
+.bt:hover {
+  color: #094cb5;
+  transition: ease-in-out 500ms;
 }
 
-.check:hover{
-    color: lightgreen;
-    transition: ease-in-out 500ms;
+.check:hover {
+  color: lightgreen;
+  transition: ease-in-out 500ms;
 }
 
-.ear:hover{
-    color:gray;
-    transition: ease-in-out 1000ms;
+.ear:hover {
+  color: gray;
+  transition: ease-in-out 1000ms;
 }
 
 /* Carousel section */
 
-#features-carousel{
-
-    margin-bottom: 10em;
+#features-carousel {
+  margin-bottom: 10em;
 }
 
-.carousel-item{
-
-    text-align: center;
+.carousel-item {
+  text-align: center;
 }
 
-.carousel-item img{
-
-    border-radius: 100%;
-    float:left;
+.carousel-item img {
+  border-radius: 100%;
+  float: left;
 }
 
-.carousel-heading{
-
-    margin-top: 100px;
-    font-family: 'Merriweather', serif;
-
+.carousel-heading {
+  margin-top: 100px;
+  font-family: "Merriweather", serif;
 }
 
 /* Retailers section */
 
-#retailers{
-
-    background-color: white;
-    margin-bottom: 10em;
-    display:flex;
-    justify-content: space-evenly;
+#retailers {
+  background-color: white;
+  margin-bottom: 10em;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.retailers-img{
-
-    border-radius: 100%;
-    margin: 40px;
+.retailers-img {
+  border-radius: 100%;
+  margin: 40px;
 }
 
-.retailers-img{
-
-    transition: all 400ms ease-in-out;
-
+.retailers-img {
+  transition: all 400ms ease-in-out;
 }
 
-.retailers-img:hover{
-
-    transform: scale(1.2); 
+.retailers-img:hover {
+  transform: scale(1.2);
 }
 
 /* Pricing section */
 
-#pricing{
-
-    text-align: center;
-    margin-bottom: 10em;
+#pricing {
+  text-align: center;
+  margin-bottom: 10em;
 }
 
-.pricing-heading{
-    font-family: 'Merriweather', serif;
+.pricing-heading {
+  font-family: "Merriweather", serif;
 }
 
 .pricing-heading,
-.pricing-p{
-
-    margin-left: 50%;
+.pricing-p {
+  margin-left: 50%;
 }
 
 /* Aligns cards to the center of the page */
 
-.card-deck{
-
-    width: 100%;
-    margin-left: 25%;
+.card-deck {
+  width: 100%;
+  margin-left: 25%;
 }
 
-.card{
-    transition: all 400ms ease-in-out;
+.card {
+  transition: all 400ms ease-in-out;
+  cursor:pointer;
 }
 
-.card:hover{
-
-    transform: scale(1.1); 
+.card:hover {
+  transform: scale(1.1);
 }
 
-.card-body{
-
-    line-height: 2;
+.card-body {
+  line-height: 2;
 }
 
-.card-title{
-
-    font-family: 'Merriweather', serif;
+.card-title {
+  font-family: "Merriweather", serif;
 }
 
-.price-card{
-
-    color:black;
-    box-shadow: 5px 5px 5px black;
+.price-card {
+  color: black;
+  box-shadow: 5px 5px 5px black;
 }
-
-.price-btn{
-
-    color:white;
-    font-family: 'Merriweather', serif;
-}
-
-@media only screen and (max-width: 990px){
-
-    html,body{
-        
-        width: 100%;
-    }
-
-    #features{
-        width: 100%;
-    }
-
-    #cta{
-
-        /* width: 120%; */
-    }
-
-    #pricing{
-
-        width:70%;
-    }
-
-    .container-fluid{
-
-        width: 90%;
-    }
-
-   .title-section-btn{
-
-    margin-bottom: 4em;
-
-   }
-
-
-} 
 
 /* CTA section */
 
-#cta{
-
-    background-color: white;
-    text-align: center;
-    color:black;
+#cta {
+  background-color: white;
+  text-align: center;
+  color: black;
 }
 
-.cta-heading{
-
-    font-family: 'Merriweather', serif;
+.cta-heading {
+  font-family: "Merriweather", serif;
 }
 
 /* Footer section */
 
-#footer{
-
-    display: flex;
-    justify-content: center;
+#footer {
+  display: flex;
+  justify-content: center;
 }
 
-.social-icon{
-
-    margin: 20px;
-    cursor:pointer;
-
+.social-icon {
+  margin: 20px;
+  cursor: pointer;
 }
 
 /* Button to scroll to the top */
 
-.to-top-btn{
+.to-top-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: black;
+  color: white;
+  bottom: 40px;
+  right: 50px;
+  font-size: 3em;
 
-    position:fixed;
-    width: 50px;
-    height: 50px;
-    background: black;
-    color:white;
-    bottom: 40px;
-    right: 50px;
-    font-size: 3em;
-
-    text-decoration: none;
-    text-align:center;
-    line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
 }
